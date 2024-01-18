@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student Logs</title>
+
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico" />
+    <form>
+      <select
+        aria-label="Select Course"
+        id="course"
+        name="course"
+        data-cy="course_select"
+      >
+        <option selected value="">Choose Courses</option></select
+      ><br />
+      <label for="uvuId">UVU ID</label><br />
+      <input
+        type="text"
+        id="uvuId"
+        name="uvuId"
+        data-cy="uvuId_input"
+        maxlength="8"
+        style="display: none"
+      />
+
+      <h3 id="uvuIdDisplay" data-cy="uvuIdDisplay">Student Logs</h3>
+      <ul data-cy="logs" id="logs"></ul>
+      <label>New Log</label><br />
+      <textarea
+        style="height: 75px"
+        aria-label="add log textarea"
+        data-cy="log_textarea"
+      ></textarea
+      ><br />
+      <button type="submit" data-cy="add_log_btn" disabled>Add Log</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- TODO: move all TODOs that done above to down below here and change the label to DONE:. -->
+<!-- TODO: Ensure the character length never exceeds 8 -->
+<!-- TODO: set the lang attribute to American English -->
+<!-- TODO: set the characterset to utf8 -->
+<!-- TODO: temporarily use stackoverflow's favicon. "https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico"-->
+<!-- TODO: Load the CSS file -->
+<!-- TODO: The following options are currently static values to show you sample data.  -->
+<!-- AJAX to replace them with dynamic data from GET https://json-server-ft3qa5--3000.local.webcontainer.io/api/v1/courses -->
+<!-- NOTE: all AJAX in this project is via fetch-->
+<!-- Use your own unique URL you recorded, not the sample one above. -->
+<!-- TODO: If course ever becomes unselected, don't show the uvu id text input box.-->
+<!-- TODO: Click anywhere on the log to toggle visibility of the log (text only, not the date) -->
+<!-- TODO: Don't show the uvu id text input box until a course was selected above. -->
+<!-- TODO: Button should be disabled until the logs, if any, are displayed and there's text in the textarea -->
+<!-- TODO: write `10234567` as sample data on the input field below  -->
+<!-- TODO: Only numbers, no letters or other characters-->
+<!-- TODO: When character length reaches 8 and it's only digits, fire off ajax request, if 200 or 304, display results, else appropriately guide the user. -->
+<!-- TODO: Load the JS file -->
+<!-- TODO: add appropriate comments you feel are necessary, if any, for the next coder to understand -->
+<!-- TODO: The following options are currently static values to show you an example.  -->
+<!-- You must replace them with dynamic data by ajaxing GET https://json-server-ft3qa5--3000.local.webcontainer.io/logs?courseId=<courseID>&uvuId=<uvuID> -->
+<!-- TODO: Button should AJAX PUT the textarea value to json-server which will store it -->

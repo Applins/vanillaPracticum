@@ -1,0 +1,19 @@
+/* TODO: make it look awesome. */
+body {
+  background-color: rgb(0, 252, 160);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ul[data-cy='logs'] li pre p {
+  display: inline-block;
+  font-size: 15px;
+}
+textarea {
+  width: 500px;
+}
+p {
+  max-width: 470px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+/* TODO: make it responsive. */
